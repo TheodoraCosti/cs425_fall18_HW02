@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/background.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    height: auto;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+ul, ol, dl { /*Element/tag selectors*/
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0; 
+    padding-right: 15px;
+    padding-left: 15px;
+}
+a img { /*removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+    border: none;
+}
+a:link {
+    color: #42413C;
+    text-decoration: underline;
+}
+a:hover, a:active, a:focus { 
+    text-decoration: none;
+}
+
+ul.h-navbar {
+    font-size: 130%;
+    list-style-type: none;  /*hides bullets*/
+    background-color: rgb(0, 0, 0);
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 1px;
+    position: fixed;
+    width: 100%
+}
+ul.h-navbar li{
+    float: right;
+}
+ul.h-navbar li a {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    display: block;
+}
+ul.h-navbar li a:hover:not(.active) {
+    color: rgb(51, 73, 134);
+}
+/* Know the current link you are on*/
+ul.h-navbar li a.active, ul.h-navbar li a:hover{
+	color: #3366cc;
+}
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px){
+    .h-navbar{
+        position: relative;
+    }
+    ul .h-navbar li{
+        float: none;
+    }
+    .responsive{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px){
+    .h-navbar{
+        position: relative;
+    }
+    ul .h-navbar li{
+        float: none;
+    }
+    .responsive{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .h-navbar{
+        position: relative;
+    }
+    ul .h-navbar li{
+        float: none;
+    }
+    .responsive{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 992px){
+    .h-navbar{
+        position: relative;
+    }
+    ul .h-navbar li{
+        float: none;
+    }
+    .responsive{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .h-navbar{
+        position: relative;
+    }
+    ul .h-navbar li{
+        float: none;
+    }
+    .responsive{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px){
+    .h-navbar{
+        position: relative;
+    }
+    ul .h-navbar li{
+        float: none;
+    }
+    .responsive{
+        width: 100%;
+    }
+}
+
+.row{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    text-align: justify;
+}
+
+.jd{
+    padding-top: 15%;
+    width: 100%;
+    height: auto;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 1px;
+}
+div.column img{
+     width: 100%;
+    height: auto;
+}
+
+.column2 p, .column p{
+    font-weight: bold;
+}
+
+.row::after, .row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 600px) {
+    .column, .column2 {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px){
+    .column, .column2 {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .column, .column2 {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 992px){
+    .column, .column2 {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .column, .column2 {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px){
+   .column, .column2 {
+        width: 100%;
+    }
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 10px;
+    float: left;
+    right: 18%;
+    left: 77.25%;
+    max-width: 50px;
+    width: 100%;
+    font-size: 15px;
+    border-color: #66CDAA;
+    background-color: #66CDAA;
+    padding: .5px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*On Hover Color Change*/
+#myBtn:hover {
+    background-color: #008080;
+}
+
+*{
+    box-sizing: border-box;
+}
+.container {
+    width: 950px; 
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    background-image: url(../images/b.jpg);
+    background-repeat: repeat;
+    text-align: center;
+    font-size: 90%; 
+}
+.containerb {
+    width: 950px; 
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    text-align: center;
+    font-size: 90%; 
+}
+.content h1 {
+    font-size: 160%;
+    margin-top: 20px;
+}
+.content p {
+    font-size: 110%;
+    font-style: italic;
+}
+.content h2 {
+    font-size: 140%;
+    color: #000099;
+}
+.content .profile {
+    padding: 5px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+label{
+    color: rgb(1, 1, 41);
+    font-weight: bold;
+    font-size: 120%;
+    display: block;
+    text-shadow:5px 5px 10px rgb(78, 73, 139);
+}
+input[type=text],[type=date],[type=email], select, textarea {
+    width: 30%;
+    padding: 8px;
+    border: 1px solid #66CDAA;
+    background-color: #ADD8E6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    resize: vertical;
+}
+input[type=submit],[type=reset] {
+    background-color: #66CDAA;
+    color: black;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    font-weight: bold;
+}
+input[type=submit]:hover {
+    background-color: #008080;
+}
+input[type=reset]:hover {
+    background-color: #008080;
+}
+.footer {
+    padding: 10px 0;
+    position: relative;
+    clear: both;
+    font-size: 150%;
+}
+.footer i{
+    padding: 5px;
+}
+
+.banner {
+    background-image: url(../images/a.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+}
+#banner-text {
+    position:absolute;
+    text-align: center;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
