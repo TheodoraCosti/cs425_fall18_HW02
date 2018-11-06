@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>JD Photography-ContactPage</title>
+	<meta name="description" content="JD Photography Contact Us section">
+	<meta name="keywords" content="JD, Photography, ContactUs, JohnDoe, Japan-photography, HTML">
+	<meta name="author" content="Theodora Costi">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+	<a name="top"></a>
+	<header>
+    <ul class="h-navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a class="active" href="contact.html">Contact Us</a></li>
+    </ul>
+  </header>>
+	<div class="container">
+		<div class="responsive">
+		<div class="content">
+			<h1>Contact JD Photography</h1>
+			<p>Studio Address: Korai 6, Latsia, Nicosia</p>
+			<p>Working Hours: 8:00 a.m - 19:00 p.m</p>
+			<h2>Client Message:</h2>
+			<div class="profile">
+				<form action="">
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="firstname" placeholder="Type your name" required=""><br><br>
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="lastname" placeholder="Type your last name" required=""><br><br>
+					<label for="mail">Email Address</label>
+					<input type="email" id="mail" name="email" placeholder="example@domain.com" required=""><br><br>
+					<label for="msgsub">Message Subject</label>
+					<input type="text" id="msgsub" name="msgsub" placeholder="Type your message subject"><br><br>
+					<textarea>Type your message..</textarea><br><br>
+					<label for="dom">Date of Meeting</label>
+					<input type="date" id="datemeet" value="2018-01-01"><br><br>
+					<label for="mhours">Meeting Hours</label>
+					<select name="hour">
+						<option value="a">08:00</option>
+						<option value="b">09:00</option>
+						<option value="c">10:00</option>
+						<option value="d">11:00</option>
+						<option value="e">12:00</option>
+						<option value="f">13:00</option>
+						<option value="g">14:00</option>
+						<option value="h">15:00</option>
+						<option value="i">16:00</option>
+						<option value="j">17:00</option>
+						<option value="k">18:00</option>
+					</select><br><br>
+					<input type="submit" value="Submit">
+					<input type="reset" value="Reset">
+				</form>
+			</div>
+		</div>
+		<div class="footer">
+			<a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a>
+			<a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+		</div>
+	</div>
+	<button id="myBtn"><a href="#top" style="color: white">Top</a></button>
+	</div>
+  	<div class="clearfix"></div>
+</body>
+</html>
